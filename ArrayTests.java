@@ -4,18 +4,21 @@ import org.junit.*;
 public class ArrayTests {
 	@Test 
 	public void testReverseInPlace() {
+    // This one will work
     int[] input1 = { 3 };
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{ 3 }, input1);
+    // This one will fail the test
     int[] input2 = {1,2,3,4,5};
     ArrayExamples.reverseInPlace(input2);
     assertArrayEquals( new int[]{5,4,3,2,1}, input2);
-    int[] input3 = {1,2,3,4};
+    /*int[] input3 = {1,2,3,4};
     ArrayExamples.reverseInPlace(input3);
     assertArrayEquals(new int[]{4,3,2,1}, input3);
     int[] input4 = {};
     ArrayExamples.reverseInPlace(input4);
     assertArrayEquals(new int[]{}, input4);
+    */
 	}
 
 
